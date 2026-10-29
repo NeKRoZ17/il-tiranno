@@ -328,3 +328,56 @@
         </div>
         <div class="card-content">
           <h3 class="card-title">Vittorio</h3>
+          <div class="card-subtitle">Il Capo / Super Tiranno Cattivissimo</div>
+          <p class="card-desc">
+            Governa il cantiere con la frusta e il terrore. Famoso in tutta la regione per un record storico negativo imbattuto: 
+            <strong>NON ha MAI portato un cornetto o un caffè in cantiere</strong> in tutta la sua carriera. 
+            Nonostante i suoi camuffamenti e l'aspetto da 'simpatico intrattenitore', la sua ferocia nel chiedere scadenze impossibili rimane leggendaria.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SEZIONE ADORAZIONE ANGELO -->
+    <div class="miracle-section">
+      <h2 class="section-title" style="margin-bottom: 10px;">L'Adorazione del Salvatore</h2>
+      <div class="miracle-img-container">
+        <img src="cena.jpeg" alt="Angelo Il Salvatore di Stildome">
+      </div>
+      <p class="miracle-text">
+        Ecco una rara testimonianza fotografica dei momenti di pausa in Stildome. Qui possiamo vedere tutto il team di operai 
+        riunito a tavola, inteso a rendere grazie e ad adorare il vero e unico salvatore dell'azienda: 
+        <strong>Angelo Soccio</strong>. Colui che porta la luce (e la pazienza) nei cantieri devastati dalla tirannia di Vittorio.
+      </p>
+    </div>
+
+    <!-- WIDGET MEME IN JAVASCRIPT -->
+    <div class="meme-widget">
+      <h3>Statistiche Cantiere Stildome in Tempo Reale</h3>
+      <p style="margin-top: 10px;">Caffè portati dal Capo Vittorio ad oggi: <strong id="coffee-count" style="color: var(--accent-red); font-size: 1.2rem;">0</strong></p>
+      <p style="margin-top: 5px;">Infissi montati da Angelo mentre il capo urla: <strong id="window-count" style="color: var(--accent-gold); font-size: 1.2rem;">9999+</strong></p>
+      <button class="meme-btn" onclick="offriCaffe()">Chiedi un cornetto a Vittorio</button>
+      <p id="boss-reply" style="margin-top: 10px; font-style: italic; color: #aaa; font-size: 0.9rem;"></p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Stildome Infissi - Pagina goliardica e celebrativa.</p>
+  </footer>
+
+  <script>
+    function offriCaffe() {
+      const risposte = [
+        "Vittorio ha fatto finta di non sentire ed è scappato in macchina!",
+        "Vittorio risponde: 'Lavorate invece di pensare ai cornetti!'",
+        "Errore 404: Cornetto non trovato nel DNA del Capo.",
+        "Vittorio vi ha guardato male e ha raddoppiato le finestre da montare."
+      ];
+      const randomResponse = risposte[Math.floor(Math.random() * risposte.length)];
+      document.getElementById('boss-reply').innerText = randomResponse;
+    }
+  </script>
+</body>
+</html>
